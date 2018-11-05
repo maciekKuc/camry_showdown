@@ -1,4 +1,47 @@
 #start{
 	background: url(http://t1-cms-2.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-header-mobile_tcm-1015-1467232.jpg);
 	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+h1, h2, h3{
+	text-align: center;
+}
+.pictures, .qualities, .generations{
+	display:grid;
+}
+.pictures{
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 600px 300px 450px;
+	grid-template-areas: "pic1 pic1 pic1 pic1 pic1 pic1"
+						 "pic2 pic2 pic2 pic3 pic3 pic3"
+						 "pic4 pic4 pic5 pic5 pic6 pic6"
+}
+.pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
+	width: 100%;
+
+}
+.pic-1{
+	grid-area: pic1;
+}
+.pic-2{
+	grid-area: pic2;
+}
+.pic-3{
+	grid-area: pic3;
+}
+.pic-4{
+	grid-area: pic4;
+}
+.pic-5{
+	grid-area: pic5;
+}
+.pic-6{
+	grid-area: pic6;
+}
+.qualities{
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.generations{
+	grid-template-columns: repeat(auto-fit, 330px);
 }
