@@ -1,24 +1,50 @@
-#start{
-	background: url(http://t1-cms-2.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-header-mobile_tcm-1015-1467232.jpg);
-	height: 300px;
-	background-size: contain;
-	background-repeat: no-repeat;
+*{
+	font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, h3{
+nav{
+	height: 65px;
+}
+#intro{
+	height: 750px;
+	background: url('https://t1-cms-1.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-exterior-02-full_tcm-1015-1484217.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+h1, h2, h3, article{
 	text-align: center;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 26px;
+}
+h4{
+	font-size: 18px;
+}
+article{
+	margin: 100px 0;
 }
 .pictures, .qualities, .generations{
 	display:grid;
+
 }
 .pictures{
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 600px 300px 450px;
 	grid-template-areas: "pic1 pic1 pic1 pic1 pic1 pic1"
-						 "pic2 pic2 pic2 pic3 pic3 pic3"
-						 "pic4 pic4 pic5 pic5 pic6 pic6"
+						 "pic2 pic2 pic3 pic3 pic4 pic4"
+						 "pic5 pic5 pic5 pic6 pic6 pic6"
 }
 .pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
 }
 .pic-1{
