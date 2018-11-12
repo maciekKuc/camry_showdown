@@ -3,6 +3,39 @@
 }
 nav{
 	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 100%;
+}
+.navUl{
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	grid-template-rows: 65px;
+	align-content: center;
+}
+.navUl li{
+	list-style: none;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+.navUl1 li:hover{
+	background:red;
+	color: white;
+}
+.navUl2 li:hover{
+	color: red;
+}
+#logo:hover{
+	background:white;
+}
+#logo img{
+	height: 40px;
+	padding: 0;
 }
 #intro{
 	height: 750px;
@@ -11,12 +44,14 @@ nav{
 	background-position: center;
 	background-size: 100% auto;
 }
-
-h1, h2, h3, article{
+#intro h1{
+	padding: 70px 0 40px 0;
+}
+h1, h2, h3, article, .navUl li{
 	text-align: center;
 }
 h1{
-	font-size: 40px;
+	font-size: 50px;
 }
 h2{
 	font-size: 32px;
@@ -32,7 +67,7 @@ article{
 }
 .pictures, .qualities, .generations{
 	display:grid;
-
+	
 }
 .pictures{
 	grid-template-columns: repeat(6, 1fr);
@@ -40,6 +75,12 @@ article{
 	grid-template-areas: "pic1 pic1 pic1 pic1 pic1 pic1"
 						 "pic2 pic2 pic3 pic3 pic4 pic4"
 						 "pic5 pic5 pic5 pic6 pic6 pic6"
+}
+.pictures img{
+	box-sizing: border-box;
+}
+.pictures img:hover{
+	border: solid 10px rgb(255, 255, 255);
 }
 .pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
 	width: 100%;
@@ -69,5 +110,18 @@ article{
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 .generations{
-	grid-template-columns: repeat(auto-fit, 330px);
+	grid-template-columns: repeat(auto-fit, 325px);
+	grid-gap: 0;
+}
+.catalogue{
+	color: white;
+	background: red;
+	border-radius: 20px;
+	border: 0;
+	height: 45px;
+	margin: 0 auto;
+}
+.catalogue span{
+	padding: 10px;
+	font-family: Helvetica;
 }
