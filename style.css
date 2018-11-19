@@ -1,6 +1,7 @@
 *{
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 nav{
 	height: 65px;
 	display: flex;
@@ -10,12 +11,14 @@ nav{
 	background: white;
 	width: 100%;
 }
+
 .navUl{
 	display: grid;
 	grid-template-columns: repeat(8, auto);
 	grid-template-rows: 65px;
 	align-content: center;
 }
+
 .navUl li{
 	list-style: none;
 	height: 100%;
@@ -23,20 +26,35 @@ nav{
 	box-sizing: border-box;
 
 }
+
 .navUl1 li:hover{
 	background:red;
 	color: white;
 }
+
 .navUl2 li:hover{
 	color: red;
 }
+
+.menuFont{
+	font-size: 14px;
+	color: #595d60;
+	font-weight: 400;
+}
+
 #logo:hover{
 	background:white;
 }
+
+.burger{
+	display: none;
+}
+
 #logo img{
 	height: 40px;
 	padding: 0;
 }
+
 #intro{
 	height: 750px;
 	background: url('https://t1-cms-1.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-exterior-02-full_tcm-1015-1484217.jpg');
@@ -44,31 +62,40 @@ nav{
 	background-position: center;
 	background-size: 100% auto;
 }
+
 #intro h1{
 	padding: 70px 0 40px 0;
 }
+
 h1, h2, h3, article, .navUl li{
 	text-align: center;
 }
+
 h1{
 	font-size: 50px;
 }
+
 h2{
 	font-size: 32px;
 }
+
 h3{
 	font-size: 26px;
 }
+
 h4{
 	font-size: 18px;
 }
+
 article{
 	margin: 100px 0;
 }
+
 .pictures, .qualities, .generations{
 	display:grid;
 	
 }
+
 .pictures{
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 600px 300px 450px;
@@ -76,43 +103,54 @@ article{
 						 "pic2 pic2 pic3 pic3 pic4 pic4"
 						 "pic5 pic5 pic5 pic6 pic6 pic6"
 }
+
 .pictures img{
 	box-sizing: border-box;
 }
+
 .pictures img:hover{
 	border: solid 10px rgb(255, 255, 255);
 }
+
 .pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-
 }
+
 .pic-1{
 	grid-area: pic1;
 }
+
 .pic-2{
 	grid-area: pic2;
 }
+
 .pic-3{
 	grid-area: pic3;
 }
+
 .pic-4{
 	grid-area: pic4;
 }
+
 .pic-5{
 	grid-area: pic5;
 }
+
 .pic-6{
 	grid-area: pic6;
 }
+
 .qualities{
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
+
 .generations{
 	grid-template-columns: repeat(auto-fit, 325px);
 	grid-gap: 0;
 }
+
 .catalogue{
 	color: white;
 	background: red;
@@ -121,7 +159,17 @@ article{
 	height: 45px;
 	margin: 0 auto;
 }
+
 .catalogue span{
 	padding: 10px;
 	font-family: Helvetica;
+}
+
+@media (max-width: 1710px){
+	.navUl2 span{
+		display: none;
+	}
+	.burger{
+		display: block;
+}
 }
