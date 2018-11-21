@@ -6,7 +6,7 @@ nav{
 	height: 65px;
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	background: white;
 	width: 100%;
@@ -56,12 +56,26 @@ nav{
 }
 
 #intro{
-	height: 750px;
-	background: url('https://t1-cms-1.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-exterior-02-full_tcm-1015-1484217.jpg');
+	height: 100$;
+	/* background: url('https://t1-cms-1.images.toyota-europe.com/toyotaone/plpl/new-toyota-camry-exterior-02-full_tcm-1015-1484217.jpg'); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% auto;
 }
+
+.darkBlueFont{
+	color: #23353f;
+}
+
+#intro img{
+	position: relative;
+	top: -300px;
+	width: 100%;
+	max-height: 750px;
+	z-index: -1;
+	object-fit: cover;
+}
+
 
 #intro h1{
 	padding: 70px 0 40px 0;
@@ -146,6 +160,9 @@ article{
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
+.qualities img{
+	width: 100%;
+}
 .generations{
 	grid-template-columns: repeat(auto-fit, 325px);
 	grid-gap: 0;
@@ -169,7 +186,33 @@ article{
 	.navUl2 span{
 		display: none;
 	}
+
+}
+
+@media (max-width: 1290px){
+	#intro{
+		height: 100%;
+	}
+
 	.burger{
 		display: block;
+	}
+
+	.menuItem{
+		display: none;
+	}
 }
+
+@media (max-width: 790px){
+	h1{
+		font-size: 32px;
+}
+
+	#intro h1{
+		padding: 45px 0 10px 0;
+	}
+
+	#intro h2{
+		font-size: 16px;
+	}
 }
