@@ -103,6 +103,10 @@ h4{
 	font-size: 1.8rem;
 }
 
+p{
+	font-size: 1.6rem;
+}
+
 article{
 	margin: 100px 0;
 }
@@ -132,10 +136,12 @@ article:before, .qualitiesTitle:before{
 
 .pictures img{
 	box-sizing: border-box;
+	transition: 0.5s;
+	outline-offset: -10px;
 }
 
 .pictures img:hover{
-	border: solid 10px rgb(255, 255, 255);
+	outline: solid 10px rgba(255, 255, 255, 0.7);
 }
 
 .pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
