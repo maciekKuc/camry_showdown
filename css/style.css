@@ -3,6 +3,8 @@ html{
 	font-size: 62.5%;
 }
 
+/*navigation menu */
+
 nav{
 	height: 65px;
 	display: flex;
@@ -56,6 +58,8 @@ nav{
 	padding: 0;
 }
 
+/* hero */
+
 #intro{
 	height: 100%;
 	max-height: 750px;
@@ -63,10 +67,6 @@ nav{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% auto;
-}
-
-.darkBlueFont{
-	color: #23353f;
 }
 
 #intro img{
@@ -82,6 +82,8 @@ nav{
 #intro h1{
 	padding: 70px 0 40px 0;
 }
+
+/* typography */
 
 h1, h2, h3, article, .navUl li{
 	text-align: center;
@@ -100,12 +102,27 @@ h3{
 }
 
 h4{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 }
 
 p{
-	font-size: 1.6rem;
+	font-size: 1.7rem;
+	line-height: 2.2rem;
 }
+
+.darkBlueFont{
+	color: #23353f;
+}
+
+.u-margin-bottom-medium{
+	margin-bottom: 50px;
+}
+
+.u-margin-bottom-small{
+	margin-bottom: 20px;
+}
+
+/* component presentation */
 
 article{
 	margin: 100px 0;
@@ -199,17 +216,22 @@ article{
 
 .catalogue{
 	color: white;
+	display: inline-block;
 	background: red;
 	border-radius: 20px;
 	border: 0;
-	height: 45px;
-	margin: 0 auto;
+	padding: 15px;
+	font-size: 1.7rem;
+	margin: 50px 0 0 50%;
+	transform: translateX(-50%);
 }
 
 .catalogue span{
 	padding: 10px;
 	font-family: Helvetica;
 }
+
+/* media queries */
 
 @media (max-width: 1710px){
 	.navUl2 span{
