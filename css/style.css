@@ -53,6 +53,20 @@ nav{
 	display: none;
 }
 
+.burger-menu{
+	display: grid;
+	position: absolute;
+	top: 65px;
+	z-index: 99;
+	background-color: #F0F0F0;
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.burger-menu li:not(:last-child){
+	border-bottom: solid 1px lightgray;
+}
+
 #logo img{
 	height: 40px;
 	padding: 0;
@@ -214,6 +228,7 @@ article{
 	grid-gap: 0;
 }
 
+
 .catalogue{
 	color: white;
 	display: inline-block;
@@ -230,6 +245,39 @@ article{
 	padding: 10px;
 	font-family: Helvetica;
 }
+
+/* gallery */
+.gallery{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #F0F0F0;
+	transition: all 0.5s;
+}
+
+.gallery-exit{
+	display: inline-block;
+	width: 15%;
+
+}
+
+.gallery-exit > p{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	transform: rotate(-90deg);
+	cursor: pointer;
+	
+}
+
+.gallery-exit > span{
+	font-weight: bold;
+}
+
+
 
 /* media queries */
 
@@ -255,8 +303,8 @@ article{
 }
 
 @media (max-width: 790px){
-	h1{
-		font-size: 3.2rem;
+	html{
+		font-size: 50%;
 }
 
 	#intro h1{
@@ -266,4 +314,13 @@ article{
 	#intro h2{
 		font-size: 1.6rem;
 	}
+}
+
+@media (orientation: portrait){
+	.qualities{
+		grid-template-columns: 1fr;
+	}
+
+
+
 }
