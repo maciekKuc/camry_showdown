@@ -29,3 +29,7 @@ closeImage.addEventListener('click', () => {
 	document.querySelector('.gallery').style.right = '100%';
 });
 
+const showGallery = (e) => {
+	document.querySelector('.gallery').style.right = '0%';
+	document.querySelector('.gallery-content').appendChild(e.currentTarget);
+}
