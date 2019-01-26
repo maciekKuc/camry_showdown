@@ -181,29 +181,17 @@ article:before, .qualitiesTitle:before{
 	object-fit: cover;
 }
 
-.pic-1{
-	grid-area: pic1;
-}
+.pic-1{	grid-area: pic1 }
 
-.pic-2{
-	grid-area: pic2;
-}
+.pic-2{	grid-area: pic2 }
 
-.pic-3{
-	grid-area: pic3;
-}
+.pic-3{ grid-area: pic3 }
 
-.pic-4{
-	grid-area: pic4;
-}
+.pic-4{ grid-area: pic4 }
 
-.pic-5{
-	grid-area: pic5;
-}
+.pic-5{ grid-area: pic5 }
 
-.pic-6{
-	grid-area: pic6;
-}
+.pic-6{ grid-area: pic6 }
 
 article{
 	max-width: 1170px;
@@ -277,6 +265,12 @@ article{
 
 .gallery-exit > span{
 	font-weight: bold;
+}
+
+.gallery__side-img{
+	width: 7rem;
+	margin: 0 auto;
+
 }
 
 .gallery-content__img{
