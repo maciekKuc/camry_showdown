@@ -2,6 +2,8 @@ const burgerButton = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.menuItem');
 const galleryImage = document.getElementById('galery-img');
 const closeImage = document.querySelector('.gallery-exit');
+const rightButton = document.querySelector('.btn-right');
+const leftButton = document.querySelector('.btn-left');
 const burgerClicked = false;
 
 
@@ -32,5 +34,11 @@ closeImage.addEventListener('click', () => {
 const showGallery = (e) => {
 
 	document.querySelector('.gallery').style.right = '0%';
-	document.querySelector('.gallery-content__img').src = e.currentTarget.src ;
+	document.querySelector('.gallery-content__img').src = e.currentTarget.src;
 }
+
+rightButton.addEventListener('click', () => {
+	console.log('play it');
+});
+
+

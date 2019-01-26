@@ -288,8 +288,8 @@ article{
 .btn-left,
 .btn-right{
 	display: inline-block;
-	width: 3rem;
-	height: 3rem;
+	width: 5rem;
+	height: 5rem;
 	border-radius: 50%;
 	background-color: rgba(0, 0, 0, 0.3);
 	position: absolute;
@@ -302,6 +302,12 @@ article{
 
 .btn-left{
 	left: 15rem;
+}
+
+.btn-icon{
+	width: 80%;
+	height: 80%;
+	fill: #fff;
 }
 
 
