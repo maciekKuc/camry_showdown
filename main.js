@@ -1,10 +1,13 @@
 const burgerButton = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.menuItem');
 const galleryImage = document.getElementById('galery-img');
+const imageList = document.querySelectorAll('[onclick="showGallery(event)"]');
 const closeImage = document.querySelector('.gallery-exit');
 const rightButton = document.querySelector('.btn-right');
 const leftButton = document.querySelector('.btn-left');
+
 const burgerClicked = false;
+let picBumber = 0;
 
 
 burgerButton.addEventListener('click', (e) => {
@@ -34,11 +37,32 @@ closeImage.addEventListener('click', () => {
 const showGallery = (e) => {
 
 	document.querySelector('.gallery').style.right = '0%';
-	document.querySelector('.gallery-content__img').src = e.currentTarget.src;
+	document.querySelector('.gallery-content__img').src =  e.currentTarget.src;
+	for(let i = 0; i < imageList.length; i++){
+		if(imageList[i].src == document.querySelector('.gallery-content__img').src){
+			picBumber = i;
+		}
+	}
 }
 
 rightButton.addEventListener('click', () => {
-	console.log('play it');
+	if(picBumber >= imageList.length - 1){
+		picBumber = 0;
+		document.querySelector('.gallery-content__img').src = imageList[picBumber].src;
+	} else{
+		picBumber += 1;
+		document.querySelector('.gallery-content__img').src = imageList[picBumber].src;
+	}
+
 });
 
+leftButton.addEventListener('click', () => {
+	if(picBumber <= 0){
+		picBumber = imageList.length - 1;
+		document.querySelector('.gallery-content__img').src = imageList[picBumber].src;
+	} else{
+		picBumber -= 1;
+		document.querySelector('.gallery-content__img').src = imageList[picBumber].src;
+	}	
+});
 
