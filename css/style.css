@@ -200,11 +200,15 @@ article{
 }
 
 .qualities{
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 }
 
 .qualities--img{
 	width: 100%;
+}
+
+.qualieties--card p{
+	margin-bottom: 2rem;
 }
 
 .textCenter{
@@ -274,8 +278,9 @@ article{
 }
 
 .gallery__side-img{
-	width: 7rem;
-	margin: 0 auto;
+	width: 80%;
+	margin: 20%;
+
 
 }
 
@@ -327,7 +332,7 @@ article{
 
 }
 
-@media (max-width: 1300px){
+@media  only screen and (max-width: 1300px){
 	#intro{
 		height: 100%;
 	}
@@ -339,28 +344,18 @@ article{
 	.menuItem{
 		display: none;
 	}
+
+	.qualities{
+	grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
 }
 
-@media (max-width: 800px){
-	html{
-		font-size: 50%;
-}
-
-	#intro h1{
-		padding: 45px 0 10px 0;
-	}
-
-	#intro h2{
-		font-size: 1.6rem;
-	}
 }
 
 @media (orientation: portrait){
+	
 	.qualities{
 		grid-template-columns: 1fr;
 	}
-
-
 
 	.qualities--card{
 		margin: 20px auto;
@@ -372,6 +367,22 @@ article{
 		display: block;
 	}
 
-
-
 }
+
+
+
+@media only screen and (max-width: 800px){
+	html{
+		font-size: 50%;
+		
+}
+
+	#intro h1{
+		padding: 45px 0 10px 0;
+	}
+
+	#intro h2{
+		font-size: 1.6rem;
+	}
+}
+

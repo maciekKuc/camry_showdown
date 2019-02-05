@@ -34,7 +34,7 @@ closeImage.addEventListener('click', () => {
 });
 
 const showGallery = (e) => {
-	if(self.innerWidth > 1200){
+	if(self.innerWidth > 700){
 		document.querySelector('.gallery').style.right = '0%';
 		document.querySelector('.gallery-content__img').src =  e.currentTarget.src;
 		for(let i = 0; i < imageList.length; i++){
