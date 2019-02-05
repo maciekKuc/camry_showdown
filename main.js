@@ -34,14 +34,16 @@ closeImage.addEventListener('click', () => {
 });
 
 const showGallery = (e) => {
-
-	document.querySelector('.gallery').style.right = '0%';
-	document.querySelector('.gallery-content__img').src =  e.currentTarget.src;
-	for(let i = 0; i < imageList.length; i++){
+	if(self.innerWidth > 1200){
+		document.querySelector('.gallery').style.right = '0%';
+		document.querySelector('.gallery-content__img').src =  e.currentTarget.src;
+		for(let i = 0; i < imageList.length; i++){
 		if(imageList[i].src == document.querySelector('.gallery-content__img').src){
-			picNumber = i;
+				picNumber = i;
+			}
 		}
 	}
+	
 }
 
 rightButton.addEventListener('click', () => {
