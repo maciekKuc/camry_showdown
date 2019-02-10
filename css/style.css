@@ -82,6 +82,7 @@ nav{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% auto;
+	color: #23353f;
 }
 
 #intro img{
@@ -125,9 +126,7 @@ p{
 	line-height: 2.2rem;
 }
 
-.darkBlueFont{
-	color: #23353f;
-}
+
 
 .u-margin-bottom-medium{
 	margin-bottom: 50px;
@@ -219,6 +218,8 @@ article{
 .generations{
 	grid-template-columns: repeat(auto-fit, 325px);
 	grid-gap: 0;
+	grid-row-gap: 2rem;
+	justify-content: center;
 }
 
 .generations-container > img{
@@ -329,14 +330,6 @@ footer{
 	background-color: #F0F0F0;
 }
 
-.footer-left{
-	
-}
-
-.footer-right{
-	
-}
-
 .footer-right,
 .footer-left{
 	display: grid;
@@ -360,14 +353,14 @@ footer{
 
 /* media queries */
 
-@media (max-width: 109.375em){
+@media (max-width: 1750px){
 	.navUl2 span{
 		display: none;
 	}
 
 }
 
-@media  screen and (max-width: 81.25em){
+@media  screen and (max-width: 1300px){
 	#intro{
 		height: 100%;
 	}
@@ -381,34 +374,46 @@ footer{
 	}
 
 	.qualities{
-	grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-}
+		grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+	}
 
 }
 
+@media screen and (max-width: 1000px){
+	#intro{
+		height: 70vw;
+	}
+}
 
 
 
-
-@media screen and (max-width: 50em){
+@media screen and (max-width: 800px){
 	html{
 		font-size: 40%;
-		
+	}
+
+	#intro{
+		height: 55vw;
 	}
 
 	#intro h1{
-		padding: 45px 0 10px 0;
+		padding: 15px 0 10px 0;
 	}
 
 	#intro h2{
 		font-size: 3rem;
 	}
 
+	#intro img{
+		object-position: right;
+	}
+
 	.pictures{
 		grid-template-rows: 60vw 30vw 45vw;
 	}
 
-	.qualities{
+	.qualities,
+	.generations{
 		grid-template-columns: 1fr;
 	}
 
@@ -420,6 +425,10 @@ footer{
 		width: 80%;
 		margin: 20px auto;
 		display: block;
+	}
+
+	.generations-container{
+		margin: 4rem;
 	}
 }
 
