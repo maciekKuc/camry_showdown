@@ -15,4 +15,3 @@ Technologies used:
 
 * Javascript
 
-* jQuery
